@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Form Assignment</title>
+  <style>
+    /* Basic styling for readability and layout */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+    }
+    header {
+      text-align: center;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 10px;
+    }
+    h1, h2, h3 {
+      color: #0056b3;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #e0f0ff;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    .media-container {
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+    legend {
+      font-weight: bold;
+      color: #0056b3;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    input:invalid {
+      border-color: #dc3545;
+      background-color: #fdf2f2;
+    }
+    input:valid {
+      border-color: #28a745;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #555;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Enhancing HTML5 Content & Mastering Forms</h1>
+    <p>A demonstration of advanced HTML5 elements and form validation techniques.</p>
+  </header>
+
+  <!-- Section 1: Introduction and Lists -->
+  <section>
+    <h2>About This Assignment</h2>
+    <p>This page demonstrates the use of semantic HTML5 elements, media embedding, structured content with lists and tables, and a fully accessible, validated form using only native HTML5 features.</p>
+
+    <h3>Key HTML5 Features Used:</h3>
+    <ul>
+      <li>Semantic tags: <code>header</code>, <code>section</code>, <code>footer</code>, <code>fieldset</code>, <code>legend</code></li>
+      <li>Ordered and unordered lists for structured information</li>
+      <li>Embedded media (image and video)</li>
+      <li>Data presentation using tables</li>
+      <li>Advanced form inputs with built-in validation</li>
+    </ul>
+
+    <h3>Learning Objectives Achieved:</h3>
+    <ol>
+      <li>Use lists and tables effectively for clarity and accessibility.</li>
+      <li>Embed media using semantic HTML5 elements.</li>
+      <li>Build structured and user-friendly forms.</li>
+      <li>Apply HTML5 form attributes to enhance interaction.</li>
+      <li>Use native validation without JavaScript.</li>
+    </ol>
+  </section>
+
+  <!-- Section 2: Table and Media -->
+  <section>
+    <h2>HTML5 Input Types and Descriptions</h2>
+    <p>The table below outlines various input types used in modern web forms.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Input Type</th>
+          <th>Description</th>
+          <th>Example Use</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>text</code></td>
+          <td>Standard text input</td>
+          <td>Username, Name</td>
+        </tr>
+        <tr>
+          <td><code>email</code></td>
+          <td>Validates email format</td>
+          <td>User email address</td>
+        </tr>
+        <tr>
+          <td><code>tel</code></td>
+          <td>Telephone number (no automatic validation)</td>
+          <td>Phone number with pattern</td>
+        </tr>
+        <tr>
+          <td><code>number</code></td>
+          <td>Numeric input with optional min/max</td>
+          <td>Age, quantity</td>
+        </tr>
+        <tr>
+          <td><code>date</code></td>
+          <td>Calendar date picker</td>
+          <td>Birth date, event date</td>
+        </tr>
+        <tr>
+          <td><code>url</code></td>
+          <td>Validates web URLs</td>
+          <td>Personal website</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3: Media Embedding -->
+  <section class="media-container">
+    <h2>Embedded Media</h2>
+    <p>Below is an image and a sample video demonstrating HTML5 media support.</p>
+
+    <!-- Image Example -->
+    <img src="https://via.placeholder.com/800x400?text=HTML5+Learning+Resource" alt="Placeholder image representing HTML5 learning content">
+
+    <!-- Video Example (using a sample public video) -->
+    <h3>Introduction to HTML5 Forms (Sample Video)</h3>
+    <video controls width="800" aria-label="Introduction video about HTML5 forms">
+      <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Section 4: HTML5 Form with Validation -->
+  <section>
+    <h2>Registration Form</h2>
+    <p>Please fill out the form below to register for our HTML5 workshop. All fields are required unless marked optional.</p>
+
+    <!-- Form starts here -->
+    <form action="#" method="post" novalidate>
+
+      <!-- Personal Information Fieldset -->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <!-- Full Name with required and minlength -->
+        <label for="fullname">Full Name *</label>
+        <input 
+          type="text" 
+          id="fullname" 
+          name="fullname" 
+          placeholder="Enter your full name" 
+          required 
+          minlength="2"
+          autocomplete="name"
+        >
+        <small class="note">Must be at least 2 characters long.</small>
+
+        <!-- Email with built-in email validation -->
+        <label for="email">Email Address *</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="you@example.com" 
+          required 
+          autocomplete="email"
+        >
+        <small class="note">A valid email address is required.</small>
+
+        <!-- Phone Number with pattern for US format -->
+        <label for="phone">Phone Number (US Format) *</label>
+        <input 
+          type="tel" 
+          id="phone" 
+          name="phone" 
+          placeholder="(555) 123-4567" 
+          required 
+          pattern="^\(\d{3}\)\s\d{3}-\d{4}$"
+          autocomplete="tel"
+          title="Phone number must be in the format (555) 123-4567"
+        >
+        <small class="note">Format: (555) 123-4567</small>
+
+        <!-- Date of Birth with max to prevent future dates -->
+        <label for="dob">Date of Birth *</label>
+        <input 
+          type="date" 
+          id="dob" 
+          name="dob" 
+          required
+          max="2006-12-31"  <!-- Assuming user must be at least 18 -->
+        >
+        <small class="note">You must be at least 18 years old.</small>
+      </fieldset>
+
+      <!-- Account Details Fieldset -->
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <!-- Username with pattern (letters and numbers, 5-15 chars) -->
+        <label for="username">Choose a Username *</label>
+        <input 
+          type="text" 
+          id="username" 
+          name="username" 
+          placeholder="Enter a username" 
+          required 
+          minlength="5" 
+          maxlength="15"
+          pattern="[a-zA-Z0-9]+"
+          autocomplete="username"
+          title="Username must be 5-15 characters long and contain only letters and numbers."
+        >
+        <small class="note">5–15 characters, letters and numbers only.</small>
+
+        <!-- Password with strength requirements -->
+        <label for="password">Create Password *</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          placeholder="Create a strong password" 
+          required 
+          minlength="8"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Password must be at least 8 characters long, including one uppercase letter, one lowercase letter, and one number."
+        >
+        <small class="note">At least 8 characters with uppercase, lowercase, and number.</small>
+
+        <!-- Confirm Password using equality validation via 'confirm' name and matching pattern -->
+        <label for="confirm-password">Confirm Password *</label>
+        <input 
+          type="password" 
+          id="confirm-password" 
+          name="confirm-password" 
+          placeholder="Re-enter your password" 
+          required
+          minlength="8"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must match the previous password."
+        >
+      </fieldset>
+
+      <!-- Preferences and Additional Info -->
+      <fieldset>
+        <legend>Preferences & Additional Information</legend>
+
+        <!-- Dropdown for Experience Level -->
+        <label for="experience">HTML5 Experience Level</label>
+        <select id="experience" name="experience" required>
+          <option value="">-- Select Level --</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+
+        <!-- Checkbox for Newsletter Subscription (optional) -->
+        <label>
+          <input type="checkbox" name="newsletter" value="yes">
+          Subscribe to our monthly web development newsletter (Optional)
+        </label>
+
+        <!-- Radio buttons for Workshop Format -->
+        <p>Preferred Workshop Format:</p>
+        <label>
+          <input type="radio" name="format" value="online" required> Online
+        </label>
+        <label>
+          <input type="radio" name="format" value="in-person"> In-Person
+        </label>
+        <label>
+          <input type="radio" name="format" value="hybrid"> Hybrid
+        </label>
+
+        <!-- URL Input for Portfolio (optional but validated if filled) -->
+        <label for="portfolio">Personal Portfolio URL (Optional)</label>
+        <input 
+          type="url" 
+          id="portfolio" 
+          name="portfolio" 
+          placeholder="https://yourportfolio.com" 
+          autocomplete="url"
+        >
+        <small class="note">If provided, must be a valid URL.</small>
+
+        <!-- Textarea for Additional Comments -->
+        <label for="comments">Additional Comments or Questions</label>
+        <textarea 
+          id="comments" 
+          name="comments" 
+          rows="4" 
+          placeholder="Let us know if you have any questions..."
+          maxlength="500"
+        ></textarea>
+        <small class="note">Maximum 500 characters.</small>
+      </fieldset>
+
+      <!-- Submit Button -->
+      <button type="submit">Register for Workshop</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HTML5 Learning Platform. All rights reserved.</p>
+    <p>This page was created as part of an assignment on enhancing HTML5 content and mastering forms.</p>
+  </footer>
+
+</body>
+</html>
